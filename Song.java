@@ -1,3 +1,4 @@
+//created a class to collect the data of the title, artist, album, and year
 public class Song{
     String title; 
     String artist;
@@ -37,7 +38,8 @@ public class Song{
         this.year = year;
     }
     
-    
+    //makes note of which songs are not from albums so it can return non-album single instead
+    //if it's a song from an album, it returns everything 
     public String toString(){
         if (this.album.equals("none")){
             return "Artist: " + artist + "\nTitle: " + title + "\nNon-album single ";
